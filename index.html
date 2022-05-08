@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <section id="header">
+    <div id="top-bar" class="transparent-topbar">
+      <div class="container clearfix">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-auto">
+            <div class="top-links">
+              <ul class="top-links-container d-flex align-items-center">
+                <li class="top-links-item"><a href="">Home</a></li>
+                <li class="top-links-item"><a href="">FAQs</a></li>
+                <li class="top-links-item"><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-auto dark">
+            <ul class="top-social d-flex align-items-center">
+              <li>
+                <a href="" class="si-facebook" target="_blank"><span class="ts-icon"><i
+                      class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a>
+              </li>
+              <li>
+                <a href="" class="si-twitter" target="_blank"><span class="ts-icon"><i
+                      class="fa-brands fa-twitter"></i></span><span class="ts-text">Twitter</span></a>
+              </li>
+              <li>
+                <a href="" class="si-youtube" target="_blank"><span class="ts-icon"><i
+                      class="fa-brands fa-youtube"></i></span><span class="ts-text">Youtube</span></a>
+              </li>
+              <li>
+                <a href="" class="si-instagram" target="_blank"><span class="ts-icon"><i
+                      class="fa-solid fa-phone"></i></span><span class="ts-text">Instagram</span></a>
+              </li>
+              <li>
+                <a href="" class="si-call"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span
+                    class="ts-text">+10.11.85412542</span></a>
+              </li>
+              <li>
+                <a href="" class="si-email3"><span class="ts-icon"><i class="fa-solid fa-envelope"></i></span><span
+                    class="ts-text">info@canvas.com</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-nav-menu">
+      <div class="container">
+        <div class="header-row d-flex align-items-center flex-wrap">
+          <div id="logo">
+            <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img
+                src="/assets/images/logo.png" alt="Canvas Logo" /></a>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="menu-container d-flex align-items-center">
+              <li class="menu-item current">
+                <a class="menu-link" href="">
+                  <div>Home</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">
+                  <div>Features</div>
+                </a>
+              </li>
+              <li class="menu-item mega-menu sub-menu">
+                <a class="menu-link" href="">
+                  <div>Templates</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">
+                  <div>Why Salerise</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">
+                  <div>About us</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">
+                  <div>Blog</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">
+                  <div>Contact</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="btn btn-first ms-3 d-none d-sm-block">Login</a>
+              </li>
+
+            </ul>
+          </nav>
+          <!-- <div class="header-misc">
+            <div id="top-search" class="header-misc-icon">
+              <a href="#" id="top-search-trigger"><i class="fa-solid fa-magnifying-glass"></i><i
+                  class="icon-line-cross"></i></a>
+            </div>
+            <a href="" class="btn btn-first ms-3 d-none d-sm-block">Get Started</a>
+          </div> -->
+          <div class="mobile-menu">
+            <div class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+              aria-controls="offcanvasWithBackdrop">
+              <i class="fa-solid fa-bars ms-3"></i>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+              aria-labelledby="offcanvasWithBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                  Menu
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="main-nav">
+                  <ul class="menu-container d-flex align-items-center">
+                    <li class="menu-item current">
+                      <a class="menu-link" href="">
+                        <div>Home</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="">
+                        <div>What We Do</div>
+                      </a>
+                    </li>
+                    <li class="menu-item mega-menu sub-menu">
+                      <a class="menu-link" href="">
+                        <div>Services</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="">
+                        <div>FAQs</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="">
+                        <div>Contact</div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header-end -->
+
+  <!-- main-banner -->
+  <section id="main-banner" class="slider-element  min-vh-60 min-vh-md-100">
+    <div class="slider-inner">
+      <div class="vertical-middle">
+        <div class="container py-5">
+          <div class="row pt-5">
+            <div class="col-lg-5 col-md-8">
+              <div class="slider-title">
+                <div class="badge rounded-pill badge-default">SEO Ready</div>
+                <h2>Create a website,
+                  that drives your business</h2>
+                <p>Advanced Features. Powerful Results.
+                  Never write another line of code ever again.
+                  Anyone is a developer with SaleRise. Let your users connect to you through your website. Join Now!</p>
+                <a href="" class="btn btn-first btn-large">SIGN UP NOW!</a>
+                <a href="" class="btn btn-light btn-large">LOGIN
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- main-banner-end -->
+
+  <!-- clients -->
+  <section id="clients" class="section__padding">
+    <div class="container">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#" class="d-flex justify-content-center align-items-center"><img
+                src="assets/images/client-1.svg" alt="Brands"></a></div>
+          <div class="swiper-slide"><a href="#" class="d-flex justify-content-center align-items-center"><img
+                src="assets/images/client-1.svg" alt="Brands"></a></div>
+          <div class="swiper-slide"><a href="#" class="d-flex justify-content-center align-items-center"><img
+                src="assets/images/client-1.svg" alt="Brands"></a></div>
+          <div class="swiper-slide"><a href="#" class="d-flex justify-content-center align-items-center"><img
+                src="assets/images/client-1.svg" alt="Brands"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+    </div>
+
+  </section>
+  <!-- clients-end -->
+
+
+  <!-- services -->
+  <section id="services" class="section__padding">
+    <div class="container">
+      <div class="section__title">
+        <div class="badge rounded-pill badge-default">Services</div>
+        <h3>What We Do</h3>
+        <p>Dynamically provide access to resource-leveling mindshare vis-a-vis bricks-and-clicks ideas authoritatively.
+        </p>
+      </div>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4 col-sm-6">
+          <div class="feature-box d-flex flex-md-row-reverse text-md-end border-0">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-1.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">CHANGE TEMPLATES INSTANTANEOUSLY</h3>
+              <p>You are at liberty to change templates anytime. SaleRise intelligent design ensures your existing
+                content remains, while giving you flexibility to change layout to suit your mood.</p>
+            </div>
+          </div>
+          <div class="feature-box d-flex flex-md-row-reverse text-md-end border-0 mt-5">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-2.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">KNOW MORE ABOUT YOUR LEADS</h3>
+              <p>If you are running a business, SaleRise helps tracking your website visitors. They are essentially your
+                your leads. Know more about them and how they interact with your website!</p>
+            </div>
+          </div>
+          <div class="feature-box d-flex flex-md-row-reverse text-md-end border-0 mt-5">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-3.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">MOBILE-FIRST
+                APPROACH</h3>
+              <p>SaleRise utilises everybody's favourite Bootstrap as a backbone of our templates layout design. It
+                ensures site opens easily on small as well as large devices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
+          <img src="assets/images/phone.png" alt="iphone" class="rounded  parallax skrollable skrollable-between"
+            data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)"
+            style="transform: translateY(-4.33281px);">
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="feature-box d-flex border-0">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-4.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">WE WORK
+                TOGETHER!</h3>
+              <p>We take suite of products that we feel can help you with your growth. SaleRise is a complete ecosystem
+                that extends from a simple website to full-fledge system. Together, we grow!</p>
+            </div>
+          </div>
+          <div class="feature-box d-flex  border-0 mt-5">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-5.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">MOBILE-FIRST
+                APPROACH</h3>
+              <p>SaleRise utilises everybody's favourite Bootstrap as a backbone of our templates layout design. It
+                ensures site opens easily on small as well as large devices.</p>
+            </div>
+          </div>
+          <div class="feature-box d-flex  border-0 mt-5">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/service-6.svg" alt="Feature Icon"
+                  class="bg-transparent rounded-0"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">MOBILE-FIRST
+                APPROACH</h3>
+              <p>SaleRise utilises everybody's favourite Bootstrap as a backbone of our templates layout design. It
+                ensures site opens easily on small as well as large devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- services-end -->
+
+  <!-- service -->
+  <section class="pricing-area section__padding">
+    <div class="container">
+      <div class="section__title">
+        <div class="badge rounded-pill badge-default">Pricing</div>
+        <h3>Pricing</h3>
+        <p>SaleRise is free to host one website.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-pricing-box">
+            <div class="pricing-header">
+              <h3>Free</h3>
+              <p>Get your business up <br> and running</p>
+            </div>
+            <div class="price">$0 <span>/Monthly</span></div>
+            <div class="buy-btn"><a class="btn btn-first" href="/#">Get Started Free</a>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Drag &amp; Drop Builder</li>
+              <li><i class="fas fa-check"></i> Lead Generation &amp; Sales</li>
+              <li><i class="fas fa-check"></i> Boot &amp; Digital Assistants</li>
+              <li><i class="fas fa-check"></i> Customer Service</li>
+              <li><i class="fas fa-times"></i> Up to 1000 Subscribers</li>
+              <li><i class="fas fa-times"></i> Unlimited Broadcasts</li>
+              <li><i class="fas fa-times"></i> Landing Pages &amp; Web Widgets</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-pricing-box active">
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <p>Get your business up <br> and running</p>
+            </div>
+            <div class="price">$149 <span>/Monthly</span></div>
+            <div class="buy-btn"><a class="btn btn-first" href="/#">Start 3 Days Free
+                Trial</a></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Drag &amp; Drop Builder</li>
+              <li><i class="fas fa-check"></i> Lead Generation &amp; Sales</li>
+              <li><i class="fas fa-check"></i> Boot &amp; Digital Assistants</li>
+              <li><i class="fas fa-check"></i> Customer Service</li>
+              <li><i class="fas fa-check"></i> Up to 1000 Subscribers</li>
+              <li><i class="fas fa-times"></i> Unlimited Broadcasts</li>
+              <li><i class="fas fa-times"></i> Landing Pages &amp; Web Widgets</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="single-pricing-box">
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <p>Get your business up <br> and running</p>
+            </div>
+            <div class="price">$179 <span>/Monthly</span></div>
+            <div class="buy-btn"><a class="btn btn-first" href="/#">Start 6 Days Free
+                Trial</a></div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Drag &amp; Drop Builder</li>
+              <li><i class="fas fa-check"></i> Lead Generation &amp; Sales</li>
+              <li><i class="fas fa-check"></i> Boot &amp; Digital Assistants</li>
+              <li><i class="fas fa-check"></i> Customer Service</li>
+              <li><i class="fas fa-check"></i> Up to 1000 Subscribers</li>
+              <li><i class="fas fa-check"></i> Unlimited Broadcasts</li>
+              <li><i class="fas fa-check"></i> Landing Pages &amp; Web Widgets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- service-end -->
+
+
+  <!-- portfolio -->
+  <section id="portfolio"
+    style="background: url('assets/images/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
+    <div class="container">
+      <div class="section__title">
+        <div class="badge rounded-pill badge-default">Completed Projects</div>
+        <h3>Our Latest Works</h3>
+      </div>
+      <div class="row">
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-1.jpg" alt="The Atmosphere">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>The Atmosphere</h3>
+              <span>Digital Marketing</span>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-2.jpg" alt="Wavelength Structure">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>Wavelength Structure</h3>
+              <span>SEO</span>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-2.jpg" alt="Greenhouse Garden">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>Simplicity Pages</h3>
+              <span>Analytics</span>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-3.jpg" alt="Industrial Hub">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>SEO Analysis</h3>
+              <span>SEO</span>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-5.jpg" alt="Corporate Headquarters">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>Marketing Strategy</h3>
+              <span>Digital Marketing</span>
+            </div>
+          </div>
+        </article>
+        <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
+          <div class="grid-inner">
+            <div class="portfolio-image">
+              <img src="assets/images/work-4.jpg" alt="Space Station">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark ">
+                  <a href="#" class="overlay-trigger-icon bg-light text-dark "><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+              </div>
+            </div>
+            <div class="portfolio-desc">
+              <h3>Space Station</h3>
+              <span>Social Media</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="demo-seo-about.html" class="btn btn-first btn-large text-capitalize ms-0 mt-5 ">View
+          All Works</a>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio-end -->
+
+  <!-- process -->
+  <section id="process">
+    <div class="container clearfix py-5">
+      <div class="row">
+        <div class="col-md-4 mt-5">
+          <div class="feature-box ">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/research.svg" alt="Feature Icon"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">1. Planning &amp; Research</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="feature-box ">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/optimizing.svg" alt="Feature Icon"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">2. Optimizing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="feature-box ">
+            <div class="fbox-icon">
+              <a href="#"><img src="assets/images/result.svg" alt="Feature Icon"></a>
+            </div>
+            <div class="fbox-content">
+              <h3 class="nott ls0">3. Result</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- process-end -->
+
+  <!-- blog -->
+  <section id="blog" class="container  py-4">
+    <div class="section__title">
+      <div class="badge rounded-pill badge-default">Latest Articles</div>
+      <h3 class="nott ls0">Recently From the Blog</h3>
+    </div>
+    <div class="row mt-5 clearfix">
+      <div class="col-md-4">
+        <article class="entry">
+          <div class="entry-image mb-3">
+            <a href="#"><img src="assets/images/1.jpg" alt="Image 3" /></a>
+          </div>
+          <div class="entry-title">
+            <h3><a href="#">Top Most SEO Optizied Websites</a></h3>
+          </div>
+          <div class="entry-meta">
+            <ul>
+              <li>
+                <i class="fa-solid fa-user-tie"></i><a href="#"> John Doe</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-calendar-check"></i></i><a href="#"> 11 Mar 2021</a>
+              </li>
+            </ul>
+          </div>
+          <div class="entry-content clearfix">
+            <p>
+              Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem
+              progressive technology through pariatur quibusdam veritatis
+              quisquam. Efficiently communicate alternative.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="entry">
+          <div class="entry-image mb-3">
+            <a href="#"><img src="assets/images/3.jpg" alt="Image 3" /></a>
+          </div>
+          <div class="entry-title">
+            <h3><a href="#">10 Recent SEO Tips for Startups</a></h3>
+          </div>
+          <div class="entry-meta">
+            <ul>
+              <li>
+                <i class="fa-solid fa-user-tie"></i><a href="#"> Semicolonweb</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-calendar-check"></i></i><a href="#"> 18 Apr 2021</a>
+              </li>
+            </ul>
+          </div>
+          <div class="entry-content clearfix">
+            <p>
+              Interactively predominate progressive technology through
+              distinctive materials. Progressively benchmark extensible
+              intellectual. Exercitationem progressive technology through
+              pariatur.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="entry">
+          <div class="entry-image mb-3">
+            <a href="#"><img src="assets/images/3.jpg" alt="Image 3" /></a>
+          </div>
+          <div class="entry-title">
+            <h3><a href="#">3 Ways to Transform Your Site Into a SEO</a></h3>
+          </div>
+          <div class="entry-meta">
+            <ul>
+              <li>
+                <i class="fa-solid fa-user-tie"></i><a href="#"> John Doe</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-calendar-check"></i></i><a href="#"> 06 Aug 2021</a>
+              </li>
+            </ul>
+          </div>
+          <div class="entry-content clearfix">
+            <p>
+              Globally synergize premium metrics with holistic e-markets.
+              Professionally morph interoperable networks vis-a-vis
+              value-added methods.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- blog-end -->
+
+  <!-- promo-section -->
+  <section class="promo-section mt-5">
+    <div class="container">
+      <div class="heading-block d-flex align-items-center justify-content-center flex-column">
+        <h5 class="text-uppercase mb-1">
+          Explore the limits.
+          As structured as WebFlow and as flexible as Wix!
+        </h5>
+        <h2 class="nott ls0">
+          <span>Website Design</span> Made Easy
+        </h2>
+        <a href="demo-seo-contact.html" class="btn btn-first btn-large">SIGN UP NOW!</a>
+      </div>
+    </div>
+  </section>
+  <!-- promo-section-end -->
+
+  <!-- footer-start -->
+  <footer id="footer" class="border-0 bg-white">
+    <div class="container">
+      <div class="footer-widgets-wrap pb-5 clearfix">
+        <div class="row col-mb-50">
+          <div class="col-md-8">
+            <div class="widget clearfix">
+              <img src="/assets/images/logo.png" alt="Footer Logo" />
+              <p>
+                We believe in <strong>Simple</strong>,
+                <strong>Creative</strong> &amp;
+                <strong>Flexible</strong> Design Standards with a Retina &amp;
+                Responsive Approach. Browse the amazing Features this template
+                offers.
+              </p>
+              <div class="line line-sm"></div>
+              <div class="row">
+                <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Home</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>About</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Support</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Shop</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Blog</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Events</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Forums</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Corporate</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Agency</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>eCommerce</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Personal</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>One Page</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Restaurant</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Wedding</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>App
+                        Showcase</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Magazine</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-angle-right"></i>Landing
+                        Page</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget clearfix">
+              <div class="row clearfix">
+                <div class="col-12">
+                  <div class="feature-box d-flex align-items-center">
+                    <div class="fbox-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <span class="text-muted">Call Us:</span><br />
+                      <h3 class="fw-semibold">(10) 22 33445566</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <div class="feature-box d-flex align-items-center">
+                    <div class="fbox-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <span class="text-muted">Email Us:</span><br />
+                      <h3 class="nott ls0 fw-semibold">info@canvas.com</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widget subscribe-widget clearfix">
+              <h5>
+                <strong>Subscribe</strong> to Our Newsletter to get Important
+                News, Amazing Offers &amp; Inside Scoops:
+              </h5>
+              <form id="widget-subscribe-form" class="mb-0">
+                <div class="input-group mx-auto">
+                  <div class="input-group-text bg-transparent">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+                  <input type="email" class="form-control required email" placeholder="Enter your Email" />
+                  <button class="btn btn-first button button-color nott ls0 m-0" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="widget">
+              <div class="row col-mb-30">
+                <div class="col-lg-6 col-md-12 col-6 d-flex align-items-center">
+                  <a href="" target="_blank" class="social-icon si-facebook mb-0">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="" target="_blank" class="text-dark"><small><strong>Like us</strong><br />on
+                      Facebook</small></a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6 d-flex align-items-center">
+                  <a href="" target="_blank" class="social-icon si-colored mb-0">
+                    <i class="fa fa-rocket"></i>
+                  </a>
+                  <a href="" target="_blank" class="text-dark"><small><strong>Subscribe</strong><br />to RSS
+                      Feeds</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="copyrights" style="
+          background: url('/assets/images/footer.svg') no-repeat top center;
+          background-size: cover;
+          padding-top: 70px;
+        ">
+      <div class="container clearfix">
+        <div class="row justify-content-between col-mb-30">
+          <div class="col-12 col-lg-auto text-center text-lg-start">
+            Copyrights © 2020 All Rights Reserved by Canvas Inc.<br />
+            <div class="copyright-links">
+              <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-auto text-center text-lg-end">
+            <div class="copyrights-menu copyright-links clearfix">
+              <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a
+                href="#">FAQs</a>/<a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-start-end -->
+
+  <div id="gotoTop" onclick="clickTop()"><i class="fa-solid fa-angle-up"></i></div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
